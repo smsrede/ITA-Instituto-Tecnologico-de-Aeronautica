@@ -1,4 +1,4 @@
-package br.ita.dia3sem1;
+package br.ita.sem1dia3;
 
 public class PrincialPaciente {
 

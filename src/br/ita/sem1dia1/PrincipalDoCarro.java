@@ -1,4 +1,4 @@
-package br.ita.dia1sem1;
+package br.ita.sem1dia1;
 
 public class PrincipalDoCarro {
 	

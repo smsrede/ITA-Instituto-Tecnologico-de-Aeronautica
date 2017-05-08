@@ -1,4 +1,4 @@
-package br.ita.dia2sem1;
+package br.ita.sem1dia2;
 
 import static org.junit.Assert.*;
 

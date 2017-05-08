@@ -1,21 +1,21 @@
-package br.ita.dia1sem1;
+package br.ita.sem1dia1;
 
 public class Carro {
-	int potencia;
-	int velocidade;
-	String nome;
+	public int potencia;
+	public int velocidade;
+	public String nome;
 	
-	void acelerar(){
+	public void acelerar(){
 		this.velocidade += this.potencia;
 		
 	}
-	void frear(){
-		this.velocidade -= this.velocidade/2	;
+	public void frear(){
+		this.velocidade = this.velocidade/2	;
 	}
-	int getVelocidade(){
+	public int getVelocidade(){
 		return velocidade;
 	}
-	void imprimir(){
+	public void imprimir(){
 		System.out.println("O carro " + nome + " está na velociadade de " + getVelocidade() + " Km/h");
 	}
 }

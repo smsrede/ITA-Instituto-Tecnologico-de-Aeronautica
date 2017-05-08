@@ -1,4 +1,4 @@
-package br.ita.dia2sem1;
+package br.ita.sem1dia2;
 /*
 exemplos de construtores
 mais de um contrutor para a mesma classe
