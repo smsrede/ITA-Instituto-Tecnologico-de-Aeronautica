@@ -24,7 +24,8 @@ public class Pizza {
 
 	public void adicionaIngrediente(String i, int qtde) {
 
-		// contabiliza uso total de ingredientes
+		// contabiliza uso total de ingredientes de todas as pizzas
+		//ESTATICA
 		contaIngredienteTotal++;
 
 		// armazena no MAP cada porção de ingrediente e a quantidade dos tipos
@@ -35,7 +36,7 @@ public class Pizza {
 		this.contaIngradienteInstancia += this.ingredientesHahs.get(i);
 
 	}
-
+	
 	// retona o calculo do preco da pizza
 	public int getPrecoPizza() {
 		int preco = 0;
@@ -62,6 +63,12 @@ public class Pizza {
 	// muda o valor da variável local - nome.
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+	
+	public static void  zeraRegistroTotalIngredientes(){
+		
+		contaIngredienteTotal = 0;
+		
 	}
 
 }

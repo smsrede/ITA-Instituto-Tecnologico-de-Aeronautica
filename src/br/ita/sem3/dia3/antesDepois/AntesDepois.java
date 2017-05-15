@@ -38,12 +38,12 @@ public class AntesDepois {
 
 	@Test
 	public void test2() {
-		System.out.println("Teste 1");
+		System.out.println("Teste 2");
 	}
 
 	@Test
 	public void test3() {
-		System.out.println("Teste 1");
+		System.out.println("Teste 3");
 	}
 
 }

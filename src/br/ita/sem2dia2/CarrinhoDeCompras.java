@@ -31,17 +31,17 @@ public class CarrinhoDeCompras {
 
 	// soma o valor R$ (preço) de todas as pizzas
 	private void setTotalcarrinho(Pizza p) {
-		this.total += getvalorIndividualPizza(p);
-	}
-
-	// retorna o valor R$ (preço) de todas as pizzas
-	public int getTotalPrecoCarrinho() {
-		return this.total;
+		this.total = (this.total + p.getPrecoPizza());
 	}
 
 	// retorna o valor R$ (preço) individual de cada pizza
 	public int getvalorIndividualPizza(Pizza p) {
 		return p.getPrecoPizza();
+	}
+	
+	// retorna o valor R$ (preço) de todas as pizzas
+	public int getTotalPrecoCarrinho() {
+		return this.total;
 	}
 
 	// retona a quantidade (numero) de porçoes de ingredientes usados em todas
