@@ -6,15 +6,14 @@ public class ContaEspecial extends ContaCorrente{
 	ContaEspecial (int limite){
 		this.limite = limite;
 	}
-	
-	//estou especializando um metodo da super classe
-	public int saca(int valor){
-		//repare que representei com THIS o saldo que é herdado da superclass
-		if(valor > (this.saldo + this.limite)){
+	//eu posso sobre escrever um metodo que já existe na sub class
+	//estou especializando ele
+	public int saca(int valor) {
+		if (valor > (this.saldo + this.limite)) {
 			return 0;
-		}else{
+		} else {
 			this.saldo -= valor;
-			return this.saldo;
+			return valor;
 		}
 	}
 }

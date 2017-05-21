@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-public class ContaEspecialTest extends ContaCorrenteTest{
+public class TesteContaEspecial extends TesteContaCorrente{
 
 	@Before
 	public void inicializaConta() {
@@ -14,10 +14,18 @@ public class ContaEspecialTest extends ContaCorrenteTest{
 	}
 	
 	@Test
-	public void testeSacaValorAlemSaldoLmite() {
+	public void testeSaqueValorMaioQueSaldo() {
 		int valorSacado = cc.saca(350);
 		assertEquals(200, cc.saldo);
 		assertEquals(0, valorSacado);
+		
+	}
+	
+	@Test
+	public void testeSaqueValorDentroDoLimite() {
+		int valorSacado = cc.saca(250);
+		assertEquals(-50, cc.saldo);
+		assertEquals(250, valorSacado);
 		
 	}
 }

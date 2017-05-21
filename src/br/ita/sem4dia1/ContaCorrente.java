@@ -2,17 +2,18 @@ package br.ita.sem4dia1;
 
 public class ContaCorrente {
 	int saldo;
-	
-	public void deposita(int valor){
-		this.saldo += valor;
-	}
-	
-	public int saca(int valor){
-		if(this.saldo < valor){
+
+	public int saca(int valor) {
+		if (valor > this.saldo) {
 			return 0;
-		}else{
+		} else {
 			this.saldo -= valor;
-			return this.saldo;
+			return valor;
 		}
 	}
+
+	public void deposita(int valor) {
+		this.saldo += valor;
+	}
+
 }

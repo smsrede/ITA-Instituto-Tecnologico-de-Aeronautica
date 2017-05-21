@@ -5,13 +5,14 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-public class ContaCorrenteTest {
+public class TesteContaCorrente {
 
 	ContaCorrente cc;
 
 	@Before
 	public void inicializaConta() {
-		new ContaCorrente();
+		//antes de cada teste ele vai criar uma nova contacorrente
+		cc = new ContaCorrente();
 		cc.deposita(200);
 	}
 
@@ -22,15 +23,17 @@ public class ContaCorrenteTest {
 
 	@Test
 	public void testeSaca() {
-		assertEquals(150, cc.saca(50));
+		int valorSacado = cc.saca(50);
+		assertEquals(150, cc.saldo);
+		assertEquals(50, valorSacado);
 	}
 
 	@Test
-	public void testeSacaValorAlemSaldo() {
-		ContaCorrente cc = new ContaCorrente();
-		cc.deposita(200);
-		cc.saca(250);
+	public void testeSaqueValorMaioQueSaldo() {
+		int valorSacado = cc.saca(250);
 		assertEquals(200, cc.saldo);
+		assertEquals(0, valorSacado);
+		
 	}
 
 }
