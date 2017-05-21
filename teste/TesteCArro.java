@@ -2,7 +2,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import br.ita.sem1dia1.Carro;
+import br.ita.sem1dia1.IntroducaoJavaOo.Carro;
 
 public class TesteCArro {
 
