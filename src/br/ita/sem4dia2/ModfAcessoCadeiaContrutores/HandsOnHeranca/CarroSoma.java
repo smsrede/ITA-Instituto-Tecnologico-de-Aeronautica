@@ -1,10 +1,10 @@
 package br.ita.sem4dia2.ModfAcessoCadeiaContrutores.HandsOnHeranca;
 
 public class CarroSoma extends CarroDeCorrida{
-	private int potencia;
-	public CarroSoma(String nome, int potencia, int velocidadeMaxima) {
+	private double potencia;
+	public CarroSoma(String nome, double d, int velocidadeMaxima) {
 		super(nome,velocidadeMaxima);
-		this.potencia = potencia;
+		this.potencia = d;
 	}
 
 	@Override
