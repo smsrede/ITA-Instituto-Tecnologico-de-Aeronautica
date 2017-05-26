@@ -1,10 +1,10 @@
-package br.ita.sem4dia2.TarefaAvaliada;
+package br.ita.sem4dia2.TarefaAvaliadaCarrinhoDecompras;
 
 public class Produto {
 
 	private int codigo;
 	private String nome;
-	private float preco;
+	private int preco;
 
 	/*
 	 * Sobrescreva os métodos equals() e hashCode() de Object (veja seção sobre
@@ -16,7 +16,7 @@ public class Produto {
 	protected boolean prodIguais;
 	private Produto prod;
 
-	public Produto(int cod, String nome, float preco) {
+	public Produto(int cod, String nome, int preco) {
 		this.codigo = cod;
 		this.preco = preco;
 		this.nome = nome;
@@ -60,7 +60,7 @@ public class Produto {
 		this.nome = nome;
 	}
 
-	public void setPreco(float preco) {
+	public void setPreco(int preco) {
 		this.preco = preco;
 	}
 

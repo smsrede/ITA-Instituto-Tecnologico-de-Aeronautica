@@ -1,6 +1,16 @@
-package br.ita.sem4dia2.TarefaAvaliada;
+package br.ita.sem4dia2.TarefaAvaliadaCarrinhoDecompras;
 
 import java.util.HashMap;
+
+/*Crie uma classe CarrinhoDeCompras que armazene em um atributo interno do tipo HashMap
+cada produto adicionado no carrinho e sua respectiva quantidade.
+O método adicionaProduto() deve receber a instancia do produto e a quantidade. 
+Caso o produto já exista no HashMap, a quantidade deve ser somada a que já existe no carrinho. 
+Deve haver também um método removeProduto() que também recebe a instancia do produto e a 
+quantidade a ser removida. Observe que produtos de tamanhos diferentes devem ser 
+considerados como produtos diferentes no carrinho. O carrinho deve possuir um método 
+que calcula o valor total da compra.
+*/
 
 public class CarrinhoDeCompras {
 
@@ -30,9 +40,9 @@ public class CarrinhoDeCompras {
 				if(listaDeProdutos.get(produto) <= 0)
 					listaDeProdutos.remove(produto);
 			}
-			else System.out.println("O produto não existe no carrinho!");
+			else System.out.println("Sem produto no carrinho");
 		}
-		else System.out.println("A quantidade do produto a ser removida deve ser maior que zero!");
+		else System.out.println("Quantidade maior que 0");
 	}
 
 	public HashMap<Produto, Integer> getListaDeProdutos() {

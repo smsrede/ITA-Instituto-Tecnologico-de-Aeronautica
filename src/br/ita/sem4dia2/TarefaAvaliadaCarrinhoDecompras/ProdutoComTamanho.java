@@ -1,4 +1,11 @@
-package br.ita.sem4dia2.TarefaAvaliada;
+package br.ita.sem4dia2.TarefaAvaliadaCarrinhoDecompras;
+
+/*Crie uma classe chamada ProdutoComTamanho que estenda a classe Produto.
+Essa classe deve possuir uma informação adicional de tamanho. 
+Um exemplo seria o tamanho de uma roupa ou a numeração de um calçado. 
+Método equals() e hashCode() devem ser sobrescritos de forma que um produto com mesmo
+código e tamanhos diferentes são considerados diferentes.
+*/
 
 public class ProdutoComTamanho extends Produto {
 
@@ -7,7 +14,7 @@ public class ProdutoComTamanho extends Produto {
 	//Atributo para equals() e o hashCode()
 	private ProdutoComTamanho prod;
 	
-	public ProdutoComTamanho(int codigo, String nome, float preco, int tamanho) {
+	public ProdutoComTamanho(int codigo, String nome, int preco, int tamanho) {
 		super(codigo,nome,preco);
 		this.tamanho = tamanho;
 	}
